@@ -1,0 +1,11 @@
+* {
+  border:1px solid darkgrey;
+}
+.topsec {
+  min-height: 100vh;
+  text-align:center;
+  font-weight:bold;
+  font-size: 75px;
+  background-image:url('../Images/leafy.jpg');
+  background-size:cover;
+}
