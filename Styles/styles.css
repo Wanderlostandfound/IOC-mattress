@@ -5,9 +5,6 @@
   box-sizing: border-box;
 }
 /* ----- Layout, Padding & Margin -----*/
-.padded10 {
-  padding: 10%;
-}
 .padded5 {
   padding: 5%;
 }
@@ -17,10 +14,10 @@ body {
   color: #152b3a;
   font-family: 'Source Sans Pro', sans-serif;
 }
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5 {
   font-family: 'Changa One', cursive;
 }
-h1,h2,h3,h4,h6,p,li {
+h1,h2,h3,h4,p {
   margin-bottom: 0.5rem;
 }
 p {
@@ -45,8 +42,25 @@ h5 {
   font-size: 3rem;
 }
 /* ----- Universal Styles -----*/
-
-/* ----- Misc -----*/
+.grid .mainText {
+  padding: 5% 10% 5% 10%;
+}
+.quotation {
+  color: grey;
+  font-size: 6rem;
+}
+.quote {
+  font-size: 2.5rem;
+  padding: 5% 10% 5% 10%;
+}
+.custName {
+  color: grey;
+  text-align: right;
+}
+.testamonial {
+  min-height: 50vh;
+}
+/* ----- Header Styles -----*/
 .banner {
   min-height: 100vh;
   text-align: center;
@@ -55,61 +69,13 @@ h5 {
   background-size: cover;
   background-position: center;
 }
-.featuredText {
-  color: #fbbe00;
-}
-.featured2Text {
-  color: white;
-}
-.topImage {
-  background-image: url('../Images/dog.jpg');
-  min-height: 66vh;
-  background-position: 50% 40%;
-  background-size: cover;
-}
-.bottomImage {
-  background-image: url('../Images/bedroom.jpg');
-  min-height: 66vh;
-  background-position: 50% 50%;
-  background-size: cover;
-}
-.grid .mainText {
-  padding: 5% 10% 5% 10%;
-}
-
-.goodNight {
-  background-image: url('../Images/pencil.jpg');
-  min-height: 60vh;
-  background-position: 50% 35%;
-  background-color: #fbbe00;
-  background-size: cover;
-  text-align: center;
-}
-
-.quotation {
-  color: grey;
-  font-size: 6rem;
-}
-
-.quote {
-  font-size: 2.5rem;
-  padding: 5% 10% 5% 10%;
-}
-
-.custName {
-  color: grey;
-  text-align: right;
-}
-.testamonial {
-  min-height: 50vh;
-}
+/* ----- Footer Styles -----*/
 footer {
   background-color: #152b3a;
   color: white;
   min-height: 60vh;
   padding: 0 5%;
 }
-
 textarea, input {
   font-family: 'Source Sans Pro', sans-serif;
       font-size: 1.1rem;
@@ -120,13 +86,40 @@ textarea, input {
       border: none;
       padding: 0.5rem;
 }
-
 input[type=submit]{
   background-color: #fbbe00;
   color: white;
   border-radius: 3px;
   border: none;
 }
+/* ----- General Styles -----*/
+.featuredText {
+  color: #fbbe00;
+}
+.featured2Text {
+  color: white;
+}
+[class*=bg]{
+  min-height: 66vh;
+  background-size: cover;
+}
+.bg-topImage {
+  background-image: url('../Images/dog.jpg');
+  background-position: 50% 40%;
+}
+.bg-bottomImage {
+  background-image: url('../Images/bedroom.jpg');
+  background-position: 50% 50%;
+}
+.goodNight {
+  background-image: url('../Images/pencil.jpg');
+  min-height: 60vh;
+  background-position: 50% 35%;
+  background-color: #fbbe00;
+  background-size: cover;
+  text-align: center;
+}
+/* ----- Media Queries -----*/
 @media screen and (max-width:768px){
   .goodNight {
     background-image: none;
