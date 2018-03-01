@@ -45,6 +45,9 @@ h5 {
 .grid .mainText {
   padding: 5% 10% 5% 10%;
 }
+.grid-reverse .mainText {
+  padding: 5% 10% 5% 10%;
+}
 .quotation {
   color: grey;
   font-size: 6rem;
@@ -128,13 +131,13 @@ input[type=submit]{
       font-size: 0.9rem;
     }
     h1 {
-      font-size: 4.5rem;
+      font-size: 4.0rem;
     }
     h2 {
       font-size: 1.5rem;
     }
     h3 {
-      font-size: 4.125rem;
+      font-size: 3.9rem;
     }
     h4 {
       font-size: 2.025rem;
@@ -143,14 +146,11 @@ input[type=submit]{
       font-size: 2.625rem;
     }
     .quote{
-      font-size: 1.875rem;
+      font-size: 1.5rem;
     }
     .subhead {
       font-size: 2.25rem;
     }
-  .tabletFlip{
-    flex-direction: column-reverse;
-  }
   textarea, input {
     font-family: 'Source Sans Pro', sans-serif;
         font-size: 0.9rem;
