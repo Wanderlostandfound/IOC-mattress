@@ -1,25 +1,23 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title> Koala Mattresses
-    </title>
-    <link href="https://fonts.googleapis.com/css?family=Changa+One|Source+Sans+Pro" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="Styles/gridlex.css">
-    <link rel="stylesheet" type="text/css" href="Styles/styles.css">
+---
+layout: default
+title: Mattresses
+connect: let's<br><span class="featuredText">connect</span>
+cars:
+  - image: https://source.unsplash.com/random/400x300
+  - image: https://source.unsplash.com/random/400x300
+  - image: https://source.unsplash.com/random/400x300
+  - image: https://source.unsplash.com/random/400x300
+  - image: https://source.unsplash.com/random/400x300
+  - image: https://source.unsplash.com/random/400x300
+  - image: https://source.unsplash.com/random/400x300
+---
 
-  </head>
-  <body>
-    <section class="banner grid-middle-center">
-      <div class="">
-        <h1>
-        <span class="featuredText">sleep</span> like a baby
-      </h1>
-      <p class="subhead">
-        the ultimate mattress solution
-      </p>
+<section class="grid-7">
+  {% for cars in page.cars %}
+    <div class="col car-image" style="background-image:url('{{cars.image}}')">
     </div>
-    </section>
+  {% endfor %}
+</section>
     <section class="grid">
       <div class="col-6_sm-12 bg-topImage">
       </div>
@@ -62,24 +60,3 @@
         &#8221;
       </div>
     </section>
-    <footer class="grid-spaceBetween">
-      <div class="col-6_sm-12 footerText padded5">
-        <div class="">
-        <h5>let's<br><span class="featuredText">connect</span>
-        </h5>
-      </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
-    <div class="col-6_sm-12-middle padded5">
-      <form>
-        <input placeholder="Your Name" type="text"><br>
-        <input placeholder="Your Email" type="email"><br>
-        <textarea rows="5" placeholder="Tell Us What You Want To Say" type="text"></textarea><br>
-        <input type="submit" value="SUBMIT">
-      </form>
-    </div>
-
-    </footer>
-
-  </body>
-  </html>

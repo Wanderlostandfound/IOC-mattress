@@ -1,0 +1,172 @@
+/* ----- CSS RESET -----*/
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+/* ----- Layout, Padding & Margin -----*/
+.padded5 {
+  padding: 5%;
+}
+/* ----- Typography -----*/
+body {
+  font-size: 16px;
+  color: #152b3a;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+h1, h2, h3, h4, h5 {
+  font-family: 'Changa One', cursive;
+}
+h1,h2,h3,h4,p {
+  margin-bottom: 0.5rem;
+}
+p {
+  font-size: 1.2rem;
+}
+h1 {
+  font-size: 6rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 5.5rem;
+}
+h4 {
+  font-size: 2.7rem;
+}
+h5 {
+  font-size: 3.5rem;
+}
+.subhead {
+  font-size: 3rem;
+}
+/* ----- Universal Styles -----*/
+.grid .mainText {
+  padding: 5% 10% 5% 10%;
+}
+.grid-reverse .mainText {
+  padding: 5% 10% 5% 10%;
+}
+.quotation {
+  color: grey;
+  font-size: 6rem;
+}
+.quote {
+  font-size: 2.5rem;
+  padding: 5% 10% 5% 10%;
+}
+.custName {
+  color: grey;
+  text-align: right;
+}
+.testamonial {
+  min-height: 50vh;
+}
+/* ----- Header Styles -----*/
+.banner {
+  min-height: 100vh;
+  text-align: center;
+  color: white;
+  background-image: url('../Images/leafy.jpg');
+  background-size: cover;
+  background-position: center;
+}
+/* ----- Footer Styles -----*/
+footer {
+  background-color: #152b3a;
+  color: white;
+  min-height: 60vh;
+  padding: 0 5%;
+}
+textarea, input {
+  font-family: 'Source Sans Pro', sans-serif;
+      font-size: 1.1rem;
+      color: grey;
+      margin: 0.3rem;
+      width: 100%;
+      border-radius: 2px;
+      border: none;
+      padding: 0.5rem;
+}
+input[type=submit]{
+  background-color: #fbbe00;
+  color: white;
+  border-radius: 3px;
+  border: none;
+}
+/* ----- General Styles -----*/
+.featuredText {
+  color: #fbbe00;
+}
+.featured2Text {
+  color: white;
+}
+[class*=bg]{
+  min-height: 66vh;
+  background-size: cover;
+}
+.bg-topImage {
+  background-image: url('../Images/dog.jpg');
+  background-position: 50% 40%;
+}
+.bg-bottomImage {
+  background-image: url('../Images/bedroom.jpg');
+  background-position: 50% 50%;
+}
+.goodNight {
+  background-image: url('../Images/pencil.jpg');
+  min-height: 60vh;
+  background-position: 50% 35%;
+  background-color: #fbbe00;
+  background-size: cover;
+  text-align: center;
+}
+/* ----- Media Queries -----*/
+@media screen and (max-width:768px){
+  .goodNight {
+    background-image: none;
+  }
+    p {
+      font-size: 0.9rem;
+    }
+    h1 {
+      font-size: 4.0rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+    h3 {
+      font-size: 3.9rem;
+    }
+    h4 {
+      font-size: 2.025rem;
+    }
+    h5 {
+      font-size: 2.625rem;
+    }
+    .quote{
+      font-size: 1.5rem;
+    }
+    .subhead {
+      font-size: 2.25rem;
+    }
+  textarea, input {
+    font-family: 'Source Sans Pro', sans-serif;
+        font-size: 0.9rem;
+        color: grey;
+        margin: 0.2rem;
+        width: 100%;
+        border-radius: 2px;
+        border: none;
+        padding: 0.3rem;
+  }
+}
+.car-image {
+  min-height: 20vw;
+  background-size: cover;
+  background-position: center;
+}
+.grid-7 .car-image{
+  border: 2px solid white;
+}

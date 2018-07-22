@@ -63,6 +63,11 @@ h5 {
 .testamonial {
   min-height: 50vh;
 }
+.position-relative {
+  position: relative;
+}
+.position-absolute
+
 /* ----- Header Styles -----*/
 .banner {
   min-height: 100vh;
@@ -161,4 +166,12 @@ input[type=submit]{
         border: none;
         padding: 0.3rem;
   }
+}
+.car-image {
+  min-height: 20vw;
+  background-size: cover;
+  background-position: center;
+}
+.grid-7 .car-image{
+  border: 2px solid white;
 }
